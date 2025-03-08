@@ -1,0 +1,204 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background-image: url('page1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3a;
+}
+
+.container {
+    background: rgba(255, 252, 247, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+    transform: translateY(0);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(210, 180, 140, 0.3);
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 252, 247, 0.9);
+}
+
+h1 {
+    color: #8B5A2B;
+    animation: slideDown 0.8s ease-out;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+p {
+    font-size: 16px;
+    color: #6B4226;
+    animation: slideDown 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.login-form {
+    text-align: left;
+    animation: slideDown 0.8s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #6B4226;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(210, 180, 140, 0.5);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    color: #3a3a3a;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #CD853F;
+    box-shadow: 0 0 0 2px rgba(205, 133, 63, 0.2);
+    background-color: white;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 6px;
+}
+
+.forgot-password {
+    color: #8B5A2B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #A0522D;
+    text-decoration: underline;
+}
+
+.btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #D2B48C, #CD853F);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(205, 133, 63, 0.3);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #CD853F, #A0522D);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(160, 82, 45, 0.4);
+}
+
+.signup-link {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #6B4226;
+    animation: slideDown 0.8s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+.signup-link a {
+    color: #8B5A2B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #A0522D;
+    text-decoration: underline;
+}
+
+.back-link {
+    margin-top: 20px;
+    font-size: 14px;
+    animation: slideDown 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+.back-link a {
+    color: #8B5A2B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-link a:hover {
+    color: #A0522D;
+    text-decoration: underline;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
